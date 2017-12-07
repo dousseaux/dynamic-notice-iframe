@@ -1,0 +1,47 @@
+<!-- EXAMPLE OF HOW TO SETUP A DUX NOTICE IFRAME -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- LINK MODAL STYLESHEET -->
+    <link rel="stylesheet" href="dux_dynamic_notices_iframe.css">
+</head>
+
+<!-- CUSTOM CSS -->
+<style>
+    @media (max-width: 600px) {
+        .dux-modal-box img {
+            width: 300px;
+        }
+    }
+</style>
+<!-- END OF CUSTOM CSS -->
+
+<!-- MODAL HTML STRUCTURE -->
+
+<body>
+    <div class="dux-modal-wrapper">
+        <div id="iframe-example" class="dux-modal-box" style="padding: 0;">
+            <span class="material-icons dux-modal-close">&times;</span>
+            <img src="the-king.jpg" alt="" width="500px">
+        </div>
+    </div>
+</body>
+<!-- END OF MODAL HTML STRUCTURE -->
+
+<!-- IMPORT DUX DYNAMIC NOTICES JS -->
+<script type="text/javascript" src="dux_dynamic_notices_iframe.js"></script>
+
+<!-- CREATE THE MODAL -->
+<script type="text/javascript">
+    window.onload = function() {
+        setTimeout(function() {
+            // Create a modal that will set a cookie that will expire in one minute
+            DuxNoticeModal(document.getElementById('iframe-example'), "cookie-example", 1/24/60);
+        }, 1000);
+    }
+</script>
+
+</html>

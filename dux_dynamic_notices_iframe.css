@@ -1,0 +1,56 @@
+/*******************************************************************************
+ * Author: Pedro Dousseau <pedro@dousseau.com>
+ * Copyright: Copyright 2017, Pedro Dousseau
+ * Credits: Pedro Dousseau
+ * License: GPLv3
+ * Maintainer: Pedro Dousseau
+ * Email: pedro@dousseau.com
+ * Status: Production
+ * Description:
+ *
+ * Stylesheet for DUX Notice Modals.
+ ******************************************************************************/
+
+.dux-modal-wrapper {
+    position: fixed;
+    display: block;
+    background: rgba(32, 32, 32, 0.8);
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    overflow: hidden;
+}
+
+.dux-modal-box {
+    position: fixed;
+    display: block;
+    z-index: 10000;
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    background-color: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.dux-modal-box>h1 {
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+.dux-modal-close {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 25px;
+    color: #656565;
+    cursor: pointer;
+}
