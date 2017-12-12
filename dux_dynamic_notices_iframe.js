@@ -48,6 +48,7 @@ function createDuxIframe(iframe_src, cookie_name, cookie_expiration) {
 		dux_modal_iframe.style.border = "none";
 		dux_modal_iframe.style.width = "100%";
 		dux_modal_iframe.style.height = "100%";
+		dux_modal_iframe.style.zIndex = "1000";
 		// Append to document
 		document.body.appendChild(dux_modal_iframe);
 		// Hide iframe on message from it

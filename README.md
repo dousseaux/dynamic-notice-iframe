@@ -21,7 +21,7 @@ Import the javascript library and call the function to create the iframe.
 ```
 <script type="text/javascript" src="dux_dynamic_notices_iframe.js"></script>
 <script type="text/javascript">
-    // Sets a cookie that will expire in one hour
+    // Sets a cookie that will expire in one day
     createDuxIframe('iframe-example.html', "cookie-name", 1);
 </script>
 ```
