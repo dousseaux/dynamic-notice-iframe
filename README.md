@@ -21,7 +21,8 @@ Import the javascript library and call the function to create the iframe.
 ```
 <script type="text/javascript" src="dux_dynamic_notices_iframe.js"></script>
 <script type="text/javascript">
-    createDuxIframe('/path/to/my/iframe/document.html');
+    // Sets a cookie that will expire in one hour
+    createDuxIframe('iframe-example.html', "cookie-name", 1);
 </script>
 ```
 
@@ -55,8 +56,8 @@ Import javascript library and call the function to create the modal.
 <script type="text/javascript">
     window.onload = function() {
         setTimeout(function() {
-            // Create a modal that will set a cookie that will expire in one minute
-            DuxNoticeModal(document.getElementById('iframe-example'), "cookie-example", 1/24/60);
+            // Create the modal
+            DuxNoticeModal(document.getElementById('iframe-example'));
         }, 1000);
     }
 </script>
